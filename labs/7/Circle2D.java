@@ -60,7 +60,7 @@ public class Circle2D {
 	public boolean contains(Circle2D circle) {
 		boolean contains = false;
 		if(Math.sqrt(Math.pow(circle.getX() - x, 2) + Math.pow(circle.getY() - y, 2)) 
-				 <= Math.abs(radius - circle.getRadius()))
+				 <= radius - circle.getRadius())
 			contains = true;
 		return contains;
 	}
