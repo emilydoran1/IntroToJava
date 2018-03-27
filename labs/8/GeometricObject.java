@@ -44,6 +44,7 @@ public class GeometricObject {
 	}
 	
 	/**return a string representation of this object*/
+	@Override
 	public String toString() {
 		return "created on " + dateCreated + "\ncolor: " + color +
 				" and filled: " + filled;
