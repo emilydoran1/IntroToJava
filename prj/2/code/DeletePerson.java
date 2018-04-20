@@ -11,7 +11,7 @@ public class DeletePerson {
 		    // Step 2: Allocate a 'Statement' object in the Connection
 			Statement stmt = conn.createStatement();
 		) {
-			// DELETE records with email = 'jimdoran64@gmail.com'
+			// DELETE records with email = ?
 	         String sqlDelete = "delete from person where email = ?";
 	         PreparedStatement ps = conn.prepareStatement(sqlDelete);
 			 ps.setString(1, email);
