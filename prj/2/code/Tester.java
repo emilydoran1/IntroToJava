@@ -95,7 +95,8 @@ public class Tester {
 				date2.setMinutes(min);
 				
 				System.out.println("Please enter any extra comments or info about your appointment");
-				extraInfo = input.nextLine();
+				extraInfo = input.next();
+				extraInfo += input.nextLine();
 				
 				//call class InsertAppointment
 				appointment.insertAppointment(email, date2, extraInfo);
